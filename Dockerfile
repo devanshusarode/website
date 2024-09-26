@@ -1,5 +1,4 @@
-FROM ubuntu
+FROM ubuntu/apache2
 RUN apt update
-RUN install apache2  /home/ubuntu/jenkins 
 ADD . /var/www/html
-ENTRYPOINT apachectl -D FOREGROUND
+
