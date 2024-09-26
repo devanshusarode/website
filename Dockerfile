@@ -1,4 +1,4 @@
 FROM ubuntu/apache2
 RUN apt update
-ADD ./var/www/html
+ADD . /var/www/html
 
